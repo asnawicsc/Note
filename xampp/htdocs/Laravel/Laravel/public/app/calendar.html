@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Bootstrap Admin App + jQuery">
+   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+   <title>Angle - Bootstrap Admin Template</title>
+   <!-- =============== VENDOR STYLES ===============-->
+   <!-- FONT AWESOME-->
+   <link rel="stylesheet" href="../vendor/fontawesome/css/font-awesome.min.css">
+   <!-- SIMPLE LINE ICONS-->
+   <link rel="stylesheet" href="../vendor/simple-line-icons/css/simple-line-icons.css">
+   <!-- ANIMATE.CSS-->
+   <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
+   <!-- WHIRL (spinners)-->
+   <link rel="stylesheet" href="../vendor/whirl/dist/whirl.css">
+   <!-- =============== PAGE VENDOR STYLES ===============-->
+   <!-- FULLCALENDAR-->
+   <link rel="stylesheet" href="../vendor/fullcalendar/dist/fullcalendar.css">
+   <!-- =============== BOOTSTRAP STYLES ===============-->
+   <link rel="stylesheet" href="css/bootstrap.css" id="bscss">
+   <!-- =============== APP STYLES ===============-->
+   <link rel="stylesheet" href="css/app.css" id="maincss">
+</head>
+
+<body>
+
+      <!-- Main section-->
+      <section>
+         <!-- Page content-->
+         <div class="content-wrapper">
+            <h3>Full Calendar
+               <small>Drag and Drop events and tasks</small>
+            </h3>
+            <!-- START row-->
+            <div class="calendar-app">
+               <div class="row">
+                  <div class="col-lg-3 col-md-4">
+                     <div class="row">
+                        <div class="col-md-12 col-sm-6 col-xs-12 co-xs-pull-12">
+                           <!-- START panel-->
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4 class="panel-title">Draggable Events</h4>
+                              </div>
+                              <!-- Default external events list-->
+                              <div class="external-events-trash">
+                                 <div class="panel-body">
+                                    <div class="external-events">
+                                       <div class="bg-green">Lunch</div>
+                                       <div class="bg-danger">Go home</div>
+                                       <div class="bg-info">Do homework</div>
+                                       <div class="bg-warning">Work on UI design</div>
+                                       <div class="bg-inverse">Sleep tight</div>
+                                    </div>
+                                    <p>
+                                       <span class="checkbox c-checkbox">
+                                          <label>
+                                             <input id="remove-after-drop" type="checkbox">
+                                             <span class="fa fa-check"></span>Remove after Drop</label>
+                                       </span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- END panel-->
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-xs-12 co-xs-push-12">
+                           <!-- START panel-->
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h3 class="panel-title">Create Event</h3>
+                              </div>
+                              <div class="panel-body">
+                                 <div class="input-group mb">
+                                    <input class="form-control external-event-name" type="text" placeholder="Event name...">
+                                    <div class="input-group-btn">
+                                       <button class="btn btn-default external-event-add-btn" type="button">Add</button>
+                                    </div>
+                                 </div>
+                                 <p class="text-muted">
+                                    <small>Choose a Color</small>
+                                 </p>
+                                 <ul class="list-inline external-event-color-selector">
+                                    <li class="p0">
+                                       <a class="circle circle-danger circle-xl selected" href="#"></a>
+                                    </li>
+                                    <li class="p0">
+                                       <a class="circle circle-primary circle-xl" href="#"></a>
+                                    </li>
+                                    <li class="p0">
+                                       <a class="circle circle-info circle-xl" href="#"></a>
+                                    </li>
+                                    <li class="p0">
+                                       <a class="circle circle-success circle-xl" href="#"></a>
+                                    </li>
+                                    <li class="p0">
+                                       <a class="circle circle-warning circle-xl" href="#"></a>
+                                    </li>
+                                    <li class="p0">
+                                       <a class="circle circle-green circle-xl" href="#"></a>
+                                    </li>
+                                    <li class="p0">
+                                       <a class="circle circle-pink circle-xl" href="#"></a>
+                                    </li>
+                                    <li class="p0">
+                                       <a class="circle circle-inverse circle-xl" href="#"></a>
+                                    </li>
+                                    <li class="p0">
+                                       <a class="circle circle-purple circle-xl" href="#"></a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- END panel-->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-9 col-md-8">
+                     <!-- START panel-->
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <!-- START calendar-->
+                           <div id="calendar"></div>
+                           <!-- END calendar-->
+                        </div>
+                     </div>
+                     <!-- END panel-->
+                  </div>
+               </div>
+               <!-- END row-->
+            </div>
+         </div>
+      </section>
+   
+   <!-- =============== VENDOR SCRIPTS ===============-->
+   <!-- MODERNIZR-->
+   <script src="../vendor/modernizr/modernizr.custom.js"></script>
+   <!-- MATCHMEDIA POLYFILL-->
+   <script src="../vendor/matchMedia/matchMedia.js"></script>
+   <!-- JQUERY-->
+   <script src="../vendor/jquery/dist/jquery.js"></script>
+   <!-- BOOTSTRAP-->
+   <script src="../vendor/bootstrap/dist/js/bootstrap.js"></script>
+   <!-- STORAGE API-->
+   <script src="../vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+   <!-- JQUERY EASING-->
+   <script src="../vendor/jquery.easing/js/jquery.easing.js"></script>
+   <!-- ANIMO-->
+   <script src="../vendor/animo.js/animo.js"></script>
+   <!-- SLIMSCROLL-->
+   <script src="../vendor/slimScroll/jquery.slimscroll.min.js"></script>
+   <!-- SCREENFULL-->
+   <script src="../vendor/screenfull/dist/screenfull.js"></script>
+   <!-- LOCALIZE-->
+   <script src="../vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+   <!-- RTL demo-->
+   <script src="js/demo/demo-rtl.js"></script>
+   <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+   <!-- JQUERY UI-->
+   <script src="../vendor/jquery-ui/jquery-ui.js"></script>
+   <script src="../vendor/jqueryui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+   <!-- MOMENT JS-->
+   <script src="../vendor/moment/min/moment-with-locales.min.js"></script>
+   <!-- FULLCALENDAR-->
+   <script src="../vendor/fullcalendar/dist/fullcalendar.min.js"></script>
+   <script src="../vendor/fullcalendar/dist/gcal.js"></script>
+   <!-- =============== APP SCRIPTS ===============-->
+   <script src="js/app.js"></script>
+</body>
+
+</html>
