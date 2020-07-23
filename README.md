@@ -5,7 +5,7 @@ Note CRUD Laravel 7
 ## Dashboard
 ![Screenshot_2020-07-23 Angle - Bootstrap Admin Template](https://user-images.githubusercontent.com/35487663/88254795-ef732080-cce8-11ea-94cf-fae34f56edb6.png)
 
-## 1) Listing Page
+## 1) Listing Page & Delete Fuction
 ![Screenshot_2020-07-23 Angle - Bootstrap Admin Template(1)](https://user-images.githubusercontent.com/35487663/88254794-eda95d00-cce8-11ea-87df-1f11f838fa1d.png)
 
 ## 2)Create Page
